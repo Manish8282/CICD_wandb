@@ -31,7 +31,7 @@ def mse(y_test, y_pred):
   return tf.metrics.mean_squared_error(y_test, y_pred)
 
 # Generate data
-X = np.arange(-100, 100, 4)
+X = np.arange(-100, 100, 4).reshape(-1, 1)
 y = np.arange(-90, 110, 4)
 
 # Split into training and testing data
