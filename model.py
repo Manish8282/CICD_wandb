@@ -41,8 +41,9 @@ y_train = y[:N]
 
 X_test = X[N:]
 y_test = y[N:]
-X_train = X_train.reshape(-1, 1)
-X_test = X_test.reshape(-1, 1)
+# Reshape X_train and X_test
+X_train = np.reshape(X_train, (X_train.shape[0], X_train.shape[1], 1))
+X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1], 1))
 
 input_shape = X[0].shape 
 output_shape = y[0].shape
