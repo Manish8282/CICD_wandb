@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import wandb
 
-wandb.init(project='CICD_wandb')
+wandb.init(project='CICD_wandb', entity='manishrai727', name='keras-classification')
 
 
 def plot_predictions(train_data, train_labels, test_data, test_labels, predictions, model_name):
